@@ -1,0 +1,72 @@
+* {
+  font-family: 'Lilita One', cursive !important;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: url("Item/mo/bg/bgmo1.png") center/cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px;
+  background: #1e1e1e;
+}
+.logo-img {
+  max-width: 180px;
+  height: 75px;
+}
+
+/* MESSAGE CENTRAL */
+.no-product {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.no-product h1 {
+  font-size: 38px;
+  color: white;
+  text-shadow: -2px -2px 0 #000,
+               2px -2px 0 #000,
+              -2px  2px 0 #000,
+               2px  2px 0 #000;
+}
+
+/* SECTION QUESTION */
+.section-question {
+  text-align: center;
+  padding: 15px 0;
+}
+.section-question a {
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.section-question a:hover {
+  color: #000000;
+  text-shadow: 0 0 3px #fff, 0 0 6px #fff;
+}
+
+/* FOOTER */
+footer {
+  background: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+}
+.locyzz-link {
+  color: #ff0000;
+  text-decoration: none;
+}
+.locyzz-link:hover {
+  text-decoration: underline;
+}

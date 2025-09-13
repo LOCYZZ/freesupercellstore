@@ -1,0 +1,134 @@
+/* MODE SOMBRE GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #121212; /* Fond sombre */
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: #1e1e1e; /* Bande sombre */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.logo-img {
+    max-width: 180px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .logo-img {
+        max-width: 140px;
+    }
+}
+
+/* GRILLE DES CARTES */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur PC */
+    justify-items: center;
+    gap: 15px;
+    padding: 30px;
+    max-width: 1000px; /* Largeur max de la grille */
+    margin: auto; /* Centre horizontalement */
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile/tablette */
+    }
+}
+
+/* CARTES */
+.card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px; /* Taille max réduite sur PC */
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 900 / 530; /* Conserve le ratio original */
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* EFFET HOVER */
+.card img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* FOOTER */
+footer {
+    background: #1e1e1e;
+    padding: 15px 20px;
+    color: white;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Pour éviter que ça déborde sur petit écran */
+    text-align: center;
+}
+
+.footer-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.yt-button {
+    background: linear-gradient(45deg, #ff0000, #cc0000);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.yt-button:hover {
+    background: linear-gradient(45deg, #e60000, #b30000);
+}
+
+.footer-text {
+    max-width: 800px;
+    margin: 0;
+}
+
+.locyzz-link {
+    color: #ff0000; /* Rouge fluorescent */
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff0000; /* Effet fluorescent */
+    transition: all 0.2s;
+}
+.locyzz-link:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 8px #ff0000;
+}
+
+
